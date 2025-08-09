@@ -1,0 +1,23 @@
+Secure Coding Review Report
+---------------------------
+1. Vulnerability: Hardcoded Credentials
+   File: login.js
+   Line: 6
+   Risk Level: High
+   Fix: Use server-side authentication
+
+2. Vulnerability: No Input Validation
+   File: login.js
+   Line: 4–5
+   Risk Level: Medium
+   Fix: Sanitize input using regex
+
+3. Vulnerability: No Encryption
+   File: login.js
+   Risk Level: High
+   Fix: Use HTTPS and hash passwords server-side
+
+4. Vulnerability: No Server-Side Check
+   File: login.js
+   Risk Level: High
+   Fix: Move login logic to backend API
